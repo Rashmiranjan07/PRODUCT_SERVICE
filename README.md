@@ -149,3 +149,7 @@ Interactive testing supported.
 # 👨‍💻 Developer
 ## Rashmiranjan Shaw
 🔗 GitHub: https://github.com/Rashmiranjan07
+
+## 📄 License
+
+This project is licensed under the MIT License.
