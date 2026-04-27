@@ -30,7 +30,6 @@ It provides secure REST APIs for:
 - Clean scalable architecture  
 
 Perfect for integration with **React / Angular / Next.js / Mobile Apps**.
-
 ---
 
 # ✨ Core Features
