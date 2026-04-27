@@ -107,5 +107,9 @@ src/main/java/com/product
 └── util
 ```
 # ⚙️ Quick Start
-
 ## 1️⃣ Clone Repo
+
+```bash
+git clone https://github.com/Rashmiranjan07/PRODUCT_SERVICE.git
+cd PRODUCT_SERVICE
+```
