@@ -123,4 +123,8 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
-## 
+## 3️⃣ Run Application
+```bash
+mvn spring-boot:run
+```
+
