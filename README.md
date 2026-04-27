@@ -75,7 +75,7 @@ Perfect for integration with **React / Angular / Next.js / Mobile Apps**.
 | Database | MySQL |
 | Build Tool | Maven |
 | Docs | Swagger / OpenAPI |
-| Utility | Lomk |
+| Utility | Lombok |
 
 ---
 
