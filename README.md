@@ -147,5 +147,5 @@ Interactive testing supported.
 - Observability (Prometheus + Grafana) 📊
 
 # 👨‍💻 Developer
-## Rashmi Ranjan Shaw
+## Rashmiranjan Shaw
 🔗 GitHub: https://github.com/Rashmiranjan07
