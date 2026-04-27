@@ -129,3 +129,8 @@ mvn spring-boot:run
 ```
 
 #📘 API Documentation
+After running:
+```bash
+http://localhost:8080/swagger-ui/index.html
+```
+Interactive testing supported.
