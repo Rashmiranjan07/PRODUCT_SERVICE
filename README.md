@@ -90,4 +90,19 @@ Controller  →  Service  →  Repository  →  Database
    DTO / Validation
         ↓
  Security / JWT
+```
 
+# 📁 Project Structure
+```bash id="11s0va"
+src/main/java/com/product
+├── controller
+├── service
+├── serviceimpl
+├── repository
+├── entity
+├── dto
+├── config
+├── security
+├── exception
+└── util
+```
