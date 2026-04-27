@@ -14,7 +14,6 @@ Scalable, secure, production-ready backend service for managing products in an e
 ![Status](https://img.shields.io/badge/Build-Active-success?style=for-the-badge)
 
 </div>
-
 ---
 
 # 📌 Overview
