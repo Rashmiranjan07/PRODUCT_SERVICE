@@ -146,3 +146,6 @@ Interactive testing supported.
 - API Gateway 🌐
 - Observability (Prometheus + Grafana) 📊
 
+# 👨‍💻 Developer
+## Rashmi Ranjan Shaw
+🔗 GitHub: https://github.com/Rashmiranjan07
