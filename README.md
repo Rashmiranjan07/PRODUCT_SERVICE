@@ -113,3 +113,13 @@ src/main/java/com/product
 git clone https://github.com/Rashmiranjan07/PRODUCT_SERVICE.git
 cd PRODUCT_SERVICE
 ```
+## 2️⃣ Configure Database
+Update application.properties
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/productdb
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
