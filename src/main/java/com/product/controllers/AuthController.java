@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.product.dto.ApiResponse;
 import com.product.service.AuthService;
 
+import jakarta.servlet.http.HttpServletRequest;
+
 @RestController
 @RequestMapping("/api/v3/auth")
 public class AuthController {
@@ -26,6 +28,16 @@ public class AuthController {
 				.payload(serviceResponse).build();
 		return ResponseEntity.ok(apiResponse);
 
+	}
+	
+	@PostMapping("/logout")
+	public ResponseEntity<ApiResponse> logOutController(HttpServletRequest request){
+		String serviceResponse=authService.logOutService(request);
+		ApiResponse apiResponse = ApiResponse.builder()
+				.serviceName("PRODUCT_SERVICE")
+				.status(true).type("string")
+				.payload(serviceResponse).build();
+		return ResponseEntity.ok(apiResponse);
 	}
 
 }
