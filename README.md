@@ -27,8 +27,6 @@ It provides secure REST APIs for:
 - JWT authentication  
 - Validation & exception handling  
 - Clean scalable architecture  
-
-Perfect for integration with **React / Angular / Next.js / Mobile Apps**.
 ---
 
 # ✨ Core Features
