@@ -17,10 +17,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @Component
-public class JwtFilter extends OncePerRequestFilter{
+public class JWTFilter extends OncePerRequestFilter {
 	@Autowired
 	private JWTUtil jwtUtil;
-	
+
 	@Autowired
 	@Qualifier("invalidjwt")
 	private Set<String> blockedJwt;
@@ -30,19 +30,19 @@ public class JwtFilter extends OncePerRequestFilter{
 			throws ServletException, IOException {
 		String authHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
 //		System.out.println(authHeader);
-		String jwt=null;
-		if(authHeader!=null && authHeader.startsWith("Bearer")) {
-			jwt=authHeader.substring(7);
+		String jwt = null;
+		if (authHeader != null && authHeader.startsWith("Bearer")) {
+			jwt = authHeader.substring(7);
 		}
 		System.out.println(jwt);
-		if(jwt==null) {
+		if (jwt == null) {
 			response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 			response.setContentType("application/json");
 			response.getWriter().write("{\"message\":\"JWT not found\"}");
 			return;
 		}
 		try {
-			if(jwtUtil.isTokenExpired(jwt)|| blockedJwt.contains(jwt)) {
+			if (jwtUtil.isTokenExpired(jwt) || blockedJwt.contains(jwt)) {
 				response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 				response.setContentType("application/json");
 				response.getWriter().write("{\"message\":\"JWT expired\"}");
@@ -58,7 +58,7 @@ public class JwtFilter extends OncePerRequestFilter{
 //		//success
 		filterChain.doFilter(request, response);
 	}
-	
+
 	@Override
 	protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
 		String path = request.getRequestURI();
